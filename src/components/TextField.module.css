@@ -1,0 +1,19 @@
+.text {
+  overflow: scroll-y;
+  resize: none;
+  height: auto;
+  width: 80%;
+  outline: none;
+  font-family: inherit;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 500px) {
+  .text {
+    width: 90%;
+  }
+  h1 {
+    font-size: 25px;
+  }
+}
