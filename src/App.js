@@ -9,11 +9,8 @@ function App() {
 
   const charsCountHandler = (event) => {
     setChar(event.target.value);
-    let data = event.target.value;
+    let data = event.target.value.trim();
     setCharCount(data.length);
-    data = data.replace(/(^\s*)|(\s*$)/gi, "");
-    data = data.replace(/[ ]{2,}/gi, " ");
-    data = data.replace(/\n /, "\n");
     if (data.length === 0) {
       setWordCount(0);
     } else {
